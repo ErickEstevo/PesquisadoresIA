@@ -992,3 +992,312 @@ a { text-decoration: none; }
     transform: translateY(0);
   }
 }
+/* =====================================================
+   PESQUISADOR EM IA — SOBRE
+===================================================== */
+
+/* Eyebrow do cabeçalho */
+
+.page-eyebrow {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.page-eyebrow::before {
+  background: #fff;
+}
+
+
+/* =====================================================
+   RESEARCH HIGHLIGHT
+===================================================== */
+
+.research-highlight {
+  position: relative;
+  background: var(--n-gradient-dark);
+  border-radius: var(--n-radius-lg);
+  padding: 2.5rem;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: var(--n-shadow-lg);
+}
+
+.research-highlight::before {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: -100px;
+  top: -100px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(21, 94, 239, 0.35),
+    transparent 70%
+  );
+}
+
+.research-highlight-icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--n-radius-md);
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.research-highlight h3 {
+  position: relative;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.research-highlight p {
+  position: relative;
+  color: rgba(255,255,255,0.72);
+}
+
+.research-highlight-line {
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin: 1.5rem 0;
+}
+
+.research-mini-stat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.research-mini-stat i {
+  color: #6EA8FE;
+  font-size: 1.1rem;
+}
+
+
+/* =====================================================
+   RESEARCH CARDS
+===================================================== */
+
+.research-card {
+  padding: 2rem;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-8px);
+}
+
+.research-card p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.research-timeline {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.research-timeline::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  bottom: 15px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--n-primary),
+    var(--n-secondary)
+  );
+  opacity: 0.2;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid var(--n-border);
+  border-radius: var(--n-radius-md);
+  box-shadow: var(--n-shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:hover {
+  transform: translateX(6px);
+  box-shadow: var(--n-shadow-md);
+  border-color: rgba(21,94,239,0.2);
+}
+
+.timeline-icon {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--n-bg-alt);
+  color: var(--n-primary);
+  font-size: 1.15rem;
+}
+
+.timeline-item h4 {
+  font-size: 1rem;
+  margin: 0 0 0.35rem;
+}
+
+.timeline-item p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+/* =====================================================
+   SKILL CARDS
+===================================================== */
+
+.skill-card {
+  height: 100%;
+  padding: 1.75rem;
+  background: #fff;
+  border: 1px solid var(--n-border);
+  border-radius: var(--n-radius-md);
+  box-shadow: var(--n-shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--n-shadow-md);
+  border-color: transparent;
+}
+
+.skill-card > i {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border-radius: 12px;
+  background: var(--n-bg-alt);
+  color: var(--n-primary);
+  font-size: 1.35rem;
+}
+
+.skill-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.65rem;
+}
+
+.skill-card p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+
+/* =====================================================
+   TECHNOLOGY CLOUD
+===================================================== */
+
+.technology-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.technology-cloud span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: var(--n-radius-pill);
+  background: var(--n-bg);
+  border: 1px solid var(--n-border);
+  color: var(--n-navy);
+  font-family: var(--n-font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.technology-cloud span:hover {
+  background: var(--n-bg-alt);
+  color: var(--n-primary);
+  border-color: rgba(21,94,239,0.2);
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 991.98px) {
+
+  .research-highlight {
+    padding: 2rem;
+  }
+
+  .research-timeline {
+    padding-left: 0;
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+  .research-highlight {
+    padding: 1.5rem;
+  }
+
+  .timeline-item {
+    padding: 1rem;
+    gap: 0.85rem;
+  }
+
+  .timeline-icon {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+  }
+
+  .technology-cloud {
+    gap: 0.5rem;
+  }
+
+  .technology-cloud span {
+    font-size: 0.75rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+}
